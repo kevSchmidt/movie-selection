@@ -27,13 +27,16 @@ const listItems = document.querySelectorAll("#movieList li");
 // event listener
 listItems.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    item.style.backgroundColor = "darkblue";
+    item.classList.add("active");
   });
   item.addEventListener("mouseleave", () => {
-    item.style.backgroundColor = "blue";
+    item.classList.remove("active");
   });
-  item.addEventListener("click", () => {
-    item.style.backgroundColor = "red";
+  item.addEventListener("mouseover", () => {
+    item.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    item.classList.remove("hover");
   });
   item.addEventListener("click", display);
 });
