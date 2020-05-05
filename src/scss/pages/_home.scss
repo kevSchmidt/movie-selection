@@ -1,0 +1,17 @@
+.container {
+  background: url(../images/cinema.jpg) center;
+  background-size: cover;
+  height: 100vh;
+}
+
+li {
+  width: 25vw;
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  box-shadow: 0.6rem 2rem 2rem black;
+}
