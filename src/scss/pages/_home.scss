@@ -2,64 +2,74 @@
 .container {
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.8),
+      rgba($color-black, 0.6),
+      rgba($color-black, 0.3),
+      rgba($color-black, 0.8),
       transparent
     ),
     url(../images/cinema.jpg) center;
   background-size: cover;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include u-flex;
 }
+
+// header
 h1 {
+  font-size: 3.8rem;
   text-align: center;
-  color: white;
   position: fixed;
-  top: 2rem;
+  top: 1.5rem;
+  border-top: 5px solid $color-white;
+  border-bottom: 5px solid $color-white;
+  border-radius: 45px;
 }
+
 // movie selection
 ul {
   position: fixed;
-  top: 2rem;
-  left: 1rem;
+  top: 1.5rem;
+  left: 0.5rem;
 }
 
 li {
   margin-left: 2rem;
-  width: 25vw;
   padding: 1rem 2.5rem;
+  width: 25vw;
   font-size: 2rem;
   letter-spacing: 2px;
   list-style: none;
   cursor: pointer;
-  color: white;
   background-color: blue;
-  box-shadow: 0.5rem 1rem 1rem black;
+  box-shadow: 0.5rem 1rem 1rem $color-black;
 }
 
 // movie description
 #movieHeader {
   width: 22rem;
   text-align: center;
-  color: white;
+  font-family: cursive;
 }
 
 #movieImg {
   margin: 1rem 0;
   width: 350px;
   border-radius: 5px;
-  box-shadow: 0.5rem 1rem 1rem black;
+  box-shadow: 0.5rem 1rem 1rem $color-black;
 }
 
 #movieInfo {
   width: 22rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   text-align: center;
-  color: white;
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  background-color: rgba($color-black, 0.6);
+}
+
+// hover & active effect
+.active {
+  background-color: darkblue;
+}
+.hover {
+  background-color: red;
 }
