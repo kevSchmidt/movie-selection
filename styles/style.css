@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: arial;
+}
+
+.container {
+  background: url(../images/cinema.jpg) center;
+  background-size: cover;
+  height: 100vh;
+}
+
+li {
+  width: 25vw;
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  box-shadow: 0.6rem 2rem 2rem black;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvYmFzZS9fYmFzZS5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc2Nzcy9wYWdlcy9faG9tZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBQTtFQUNBLFVBQUE7RUFDQSxzQkFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7QUNDRjs7QUNSQTtFQUNFLDRDQUFBO0VBQ0Esc0JBQUE7RUFDQSxhQUFBO0FEV0Y7O0FDUkE7RUFDRSxXQUFBO0VBQ0Esb0JBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7RUFDQSxZQUFBO0VBQ0Esc0JBQUE7RUFDQSxrQ0FBQTtBRFdGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
