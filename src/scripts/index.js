@@ -1,9 +1,9 @@
 import { data } from "./data.js";
 let parsedData = JSON.parse(data);
-console.log(parsedData);
 
 const movieDescription = document.querySelector("#movieDescription");
 
+// create the movie selection
 parsedData.forEach((obj) => {
   let { id, title } = obj;
   let list = document.querySelector("#movieList");
@@ -11,9 +11,9 @@ parsedData.forEach((obj) => {
   list.innerHTML += movieList;
 });
 
+// display movies info
 function display() {
   let movie = parsedData.find((movie) => movie.id == this.id);
-  console.log(movie);
   let { title, image, description } = movie;
   movieDescription.innerHTML = `
   <h2 id = "movieHeader">${title}</h2>
@@ -23,8 +23,8 @@ function display() {
 }
 
 const listItems = document.querySelectorAll("#movieList li");
-console.log(listItems);
 
+// event listener
 listItems.forEach((item) => {
   item.addEventListener("mouseover", () => {
     item.style.backgroundColor = "darkblue";

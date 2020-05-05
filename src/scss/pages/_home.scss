@@ -1,10 +1,35 @@
+// background
 .container {
-  background: url(../images/cinema.jpg) center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.8),
+      transparent
+    ),
+    url(../images/cinema.jpg) center;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 2rem;
+}
+// movie selection
+ul {
+  position: fixed;
+  top: 2rem;
+  left: 1rem;
 }
 
 li {
+  margin-left: 2rem;
   width: 25vw;
   padding: 1rem 2.5rem;
   font-size: 2rem;
@@ -13,5 +38,24 @@ li {
   cursor: pointer;
   color: white;
   background-color: blue;
-  box-shadow: 0.6rem 2rem 2rem black;
+  box-shadow: 0.5rem 1rem 1rem black;
+}
+
+// movie description
+#movieHeader {
+  width: 22rem;
+  text-align: center;
+  color: white;
+}
+
+#movieImg {
+  margin: 1rem 0;
+  width: 350px;
+  border-radius: 5px;
+}
+
+#movieInfo {
+  width: 22rem;
+  padding: 1rem 2rem;
+  color: white;
 }
