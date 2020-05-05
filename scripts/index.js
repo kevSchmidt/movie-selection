@@ -18,16 +18,17 @@ function display() {
   <p id = "movieInfo">${description}</p>
   `;
 }
-
-// listItems.forEach((item) => {
-//   item.addEventListener("mouseover", () => {
-//     item.style.backgroundColor = "darkblue";
-//   });
-//   item.addEventListener("mouseleave", () => {
-//     item.style.backgroundColor = "blue";
-//   });
-//   item.addEventListener("click", () => {
-//     item.style.backgroundColor = "red";
-//     display();
-//   });
-// });
+const listItems = document.querySelectorAll("#movieList li");
+console.log(listItems);
+listItems.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    item.style.backgroundColor = "darkblue";
+  });
+  item.addEventListener("mouseleave", () => {
+    item.style.backgroundColor = "blue";
+  });
+  item.addEventListener("click", () => {
+    item.style.backgroundColor = "red";
+    display();
+  });
+});
