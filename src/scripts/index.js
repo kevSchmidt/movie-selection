@@ -24,19 +24,25 @@ function display() {
 
 const listItems = document.querySelectorAll("#movieList li");
 
+// active item
+function onClick() {
+  listItems.forEach((movie) => {
+    if (movie.classList.contains("active")) {
+      movie.classList.remove("active");
+    }
+    this.classList.remove("hover");
+    this.classList.add("active");
+  });
+}
+
 // event listener
 listItems.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    item.classList.add("active");
-  });
-  item.addEventListener("mouseleave", () => {
-    item.classList.remove("active");
-  });
   item.addEventListener("mouseover", () => {
     item.classList.add("hover");
   });
   item.addEventListener("mouseleave", () => {
     item.classList.remove("hover");
   });
+  item.addEventListener("click", onClick);
   item.addEventListener("click", display);
 });

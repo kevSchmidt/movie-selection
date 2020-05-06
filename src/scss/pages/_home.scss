@@ -33,14 +33,15 @@ ul {
 
 li {
   margin-left: 2rem;
-  padding: 1rem 2.5rem;
-  width: 25vw;
+  padding: 0.8rem 2.5rem;
+  width: 33vw;
   font-size: 2rem;
   letter-spacing: 2px;
   list-style: none;
   cursor: pointer;
   background-color: blue;
   box-shadow: 0.5rem 1rem 1rem $color-black;
+  transition: transform 0.2s;
 }
 
 // movie description
@@ -68,8 +69,9 @@ li {
 
 // hover & active effect
 .active {
-  background-color: darkblue;
+  background-color: red;
+  transform: translateX(5px);
 }
 .hover {
-  background-color: red;
+  background-color: darkblue;
 }
