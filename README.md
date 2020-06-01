@@ -1,2 +1,2 @@
 # Movie Selection
-![](./readme.png)
+![](./preview.png)
