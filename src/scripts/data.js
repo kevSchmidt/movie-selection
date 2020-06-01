@@ -1,15 +1,15 @@
 const movies = [
   {
     id: 1,
-    title: "Into The Wild",
+    title: "Into the Wild",
     image:
       "https://images-na.ssl-images-amazon.com/images/I/51sBtBUltwL._SY445_.jpg",
     description:
-      "Based on a true story. After graduating from Emory University, Christopher McCandless abandoned his possessions, gave his entire savings account to charity, and hitchhiked to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters who shape his life.",
+      "Based on a true story. After graduating from Emory University, Christopher McCandless abandoned his possessions and hitchhiked to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters who shape his life.",
   },
   {
     id: 2,
-    title: "Ne Le Dis A Personne",
+    title: "Ne le Dis a Personne",
     image:
       "https://images-na.ssl-images-amazon.com/images/I/51iVTqHDQDL._AC_SY445_.jpg",
     description:
@@ -17,7 +17,7 @@ const movies = [
   },
   {
     id: 3,
-    title: "Dances With Wolves",
+    title: "Dances with Wolves",
     image:
       "https://images-na.ssl-images-amazon.com/images/I/A1MmCKF4UGL._SL1500_.jpg",
     description:
@@ -25,7 +25,7 @@ const movies = [
   },
   {
     id: 4,
-    title: "The Boat That Rocked",
+    title: "The Boat that Rocked",
     image:
       "https://upload.wikimedia.org/wikipedia/en/e/e3/The_boat_that_rocked_poster.jpg",
     description:
@@ -73,7 +73,7 @@ const movies = [
   },
   {
     id: 10,
-    title: "De Battre Mon Cœur S'Est Arrêté",
+    title: "De Battre mon Cœur s'est Arrêté",
     image:
       "https://fr.web.img4.acsta.net/r_1280_720/medias/nmedia/18/35/55/10/18409616.jpg",
     description:
@@ -81,7 +81,7 @@ const movies = [
   },
   {
     id: 11,
-    title: "Empire Of The Sun",
+    title: "Empire of the Sun",
     image:
       "https://tvguide1.cbsistatic.com/feed/1/844/thumbs/11967844_1300x1733.jpg",
     description:
@@ -89,7 +89,7 @@ const movies = [
   },
   {
     id: 12,
-    title: "L'Ecume Des Jours",
+    title: "L'Ecume des Jours",
     image:
       "https://resize-elle.ladmedia.fr/rcrop/796,1024/img/var/plain_site/storage/images/loisirs/cinema/news/j-y-vais-j-y-vais-pas/l-ecume-des-jours-l-adaptation-magique-de-michel-gondry-2428310/36914589-1-fre-FR/L-Ecume-des-jours-l-adaptation-magique-de-Michel-Gondry.jpg",
     description:

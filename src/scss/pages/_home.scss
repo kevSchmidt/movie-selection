@@ -1,77 +1,187 @@
-// background
+// ===== Background Image ===
+
 .container {
   background: linear-gradient(
       to right,
-      rgba($color-black, 0.6),
-      rgba($color-black, 0.3),
       rgba($color-black, 0.8),
+      rgba($color-black, 0.6),
       transparent
     ),
     url(../images/cinema.jpg) center;
   background-size: cover;
   height: 100vh;
   @include u-flex;
+  overflow: hidden;
 }
 
-// header
-h1 {
-  font-size: 3.8rem;
-  text-align: center;
-  position: fixed;
-  top: 1.5rem;
-  border-top: 5px solid $color-white;
-  border-bottom: 5px solid $color-white;
-  border-radius: 45px;
-}
+// ===== Movie Selection ===
 
-// movie selection
 ul {
   position: fixed;
   top: 1.5rem;
   left: 0.5rem;
+
+  @include responsive(small) {
+    top: 14rem;
+  }
+
+  @include responsive(extraSmall) {
+    top: 7rem;
+  }
 }
 
 li {
   margin-left: 2rem;
   padding: 0.8rem 2.5rem;
-  width: 33vw;
-  font-size: 2rem;
+  width: 34.5rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
   list-style: none;
   cursor: pointer;
   background-color: blue;
   box-shadow: 0.5rem 1rem 1rem $color-black;
   transition: transform 0.2s;
+
+  @include responsive(medium) {
+    padding: 0.5rem 1.5rem;
+    width: 25rem;
+  }
+
+  @include responsive(small) {
+    padding: 0.5rem 0.5rem;
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+
+  @include responsive(extraSmall) {
+    width: 95vw;
+    margin-left: 0;
+    text-align: center;
+    padding: 0.1rem 0.3rem;
+    font-size: 1rem;
+  }
 }
 
-// movie description
+// ===== Header ===
+
+h1 {
+  font-size: 4.2rem;
+  width: 25rem;
+  text-align: center;
+  position: fixed;
+  top: 1.5rem;
+  border-top: 5px solid $color-white;
+  border-bottom: 5px solid $color-white;
+  border-radius: 45px;
+  transform: translateX(65%);
+
+  @include responsive(medium) {
+    font-size: 2.5rem;
+    width: 20rem;
+  }
+
+  @include responsive(small) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// ===== Movie Description ===
+
 #movieHeader {
-  width: 22rem;
+  margin-top: 12vh;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 25rem;
   text-align: center;
   font-family: cursive;
+  transform: translateX(65%);
+
+  @include responsive(medium) {
+    width: 20rem;
+    margin-top: 2vh;
+    font-size: 1.7rem;
+  }
+
+  @include responsive(small) {
+    width: 12rem;
+    transform: translateX(10rem);
+  }
+
+  @include responsive(extraSmall) {
+    display: none;
+  }
 }
 
 #movieImg {
   margin: 1rem 0;
-  width: 350px;
+  width: 25rem;
   border-radius: 5px;
   box-shadow: 0.5rem 1rem 1rem $color-black;
+  transform: translateX(65%);
+
+  @include responsive(medium) {
+    width: 20rem;
+  }
+
+  @include responsive(small) {
+    width: 12rem;
+    transform: translateX(10rem);
+  }
+
+  @include responsive(extraSmall) {
+    display: none;
+  }
 }
 
 #movieInfo {
-  width: 22rem;
+  width: 25rem;
   padding: 1rem;
   text-align: center;
   border-radius: 2px;
   font-family: cursive;
   background-color: rgba($color-black, 0.6);
+  transform: translateX(65%);
+
+  @include responsive(medium) {
+    width: 20rem;
+  }
+
+  @include responsive(small) {
+    width: 12rem;
+    transform: translateX(10rem);
+  }
+
+  @include responsive(extraSmall) {
+    width: 100%;
+    padding: 0.3rem;
+    transform: translateX(0) translateY(14rem);
+  }
 }
 
-// hover & active effect
+// ===== Hover & Active ===
+
 .active {
   background-color: red;
-  transform: translateX(5px);
+  transform: translateX(3px);
+  border-radius: 5px;
+  width: 35.5rem;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+
+  @include responsive(medium) {
+    width: 25.8rem;
+  }
+
+  @include responsive(small) {
+    width: 20.5rem;
+  }
+
+  @include responsive(extraSmall) {
+    width: 96vw;
+  }
 }
+
 .hover {
   background-color: darkblue;
 }

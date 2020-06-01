@@ -4,3 +4,28 @@
   align-items: center;
   justify-content: center;
 }
+
+// MEDIA QUERIES
+
+@mixin responsive($breakpoint) {
+  // 1200px
+  @if $breakpoint == medium {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  // 900px
+  @if $breakpoint == small {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  // 650px
+  @if $breakpoint == extraSmall {
+    @media (max-width: 650px) {
+      @content;
+    }
+  }
+}
