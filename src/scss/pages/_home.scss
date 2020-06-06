@@ -42,7 +42,7 @@ li {
   letter-spacing: 2px;
   list-style: none;
   cursor: pointer;
-  background-color: blue;
+  background-color: $color-primary;
   box-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.7);
   transition: all 0.3s ease-in-out;
 
@@ -174,7 +174,7 @@ h1 {
 // ===== Hover & Active ===
 
 .active {
-  background-color: red;
+  background-color: $color-active;
   transform: translateX(3px);
   border-radius: 5px;
   width: 35.5rem;
@@ -195,5 +195,5 @@ h1 {
 }
 
 .hover {
-  background-color: darkblue;
+  background-color: $color-hover;
 }
