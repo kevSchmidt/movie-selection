@@ -21,12 +21,16 @@ ul {
   top: 1.5rem;
   left: 0.5rem;
 
+  @include responsive(medium) {
+    top: 12rem;
+  }
+
   @include responsive(small) {
-    top: 14rem;
+    top: 16rem;
   }
 
   @include responsive(extraSmall) {
-    top: 7rem;
+    top: 6rem;
   }
 }
 
@@ -39,8 +43,8 @@ li {
   list-style: none;
   cursor: pointer;
   background-color: blue;
-  box-shadow: 0.5rem 1rem 1rem $color-black;
-  transition: transform 0.2s;
+  box-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.7);
+  transition: all 0.3s ease-in-out;
 
   @include responsive(medium) {
     padding: 0.5rem 1.5rem;
@@ -59,6 +63,7 @@ li {
     text-align: center;
     padding: 0.1rem 0.3rem;
     font-size: 1rem;
+    box-shadow: 0 0 0 $color-black;
   }
 }
 
@@ -76,13 +81,19 @@ h1 {
   transform: translateX(65%);
 
   @include responsive(medium) {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     width: 20rem;
   }
 
   @include responsive(small) {
+    font-size: 3.7rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @include responsive(extraSmall) {
+    font-size: 2rem;
+    width: 15rem;
   }
 }
 
@@ -153,9 +164,15 @@ h1 {
   }
 
   @include responsive(extraSmall) {
+    font-size: 0.9rem;
     width: 100%;
     padding: 0.3rem;
+    margin-bottom: 8rem;
     transform: translateX(0) translateY(14rem);
+  }
+
+  @include responsive(IPhone5) {
+    margin-bottom: 3.2rem;
   }
 }
 
