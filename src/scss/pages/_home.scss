@@ -63,7 +63,6 @@ li {
     text-align: center;
     padding: 0.1rem 0.3rem;
     font-size: 1rem;
-    box-shadow: 0 0 0 $color-black;
   }
 }
 
@@ -164,15 +163,11 @@ h1 {
   }
 
   @include responsive(extraSmall) {
-    font-size: 0.9rem;
     width: 100%;
-    padding: 0.3rem;
-    margin-bottom: 8rem;
-    transform: translateX(0) translateY(14rem);
-  }
-
-  @include responsive(IPhone5) {
-    margin-bottom: 3.2rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: -10rem;
   }
 }
 
